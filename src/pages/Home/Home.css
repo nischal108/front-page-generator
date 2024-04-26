@@ -1,0 +1,30 @@
+input:checked+label {
+    border-color: aqua;
+    background-color: #edf0fb;
+    box-shadow: rgba(51, 22, 238, 0.2) 0px 2px 8px 0px;
+    color: #1342ec;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    background-color: white;
+}
+
+input:checked+label:hover {
+    background-color: white;
+    transform: scale(1);
+    font-weight: 500;
+    color: #1342ec;
+    /* You can specify any style you want for the hover effect here */
+}
+
+input:hover+label {
+    /* background-color: #d0d9fa; */
+    /* box-shadow: rgba(51, 22, 238, 0.1) 0px 8px 24px; */
+    transition: all .3s ease-in-out;
+    font-weight: bold;
+    color: #7b7b7b;
+}
+
+.label {
+    font-weight: 500;
+
+}
