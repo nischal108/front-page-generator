@@ -13,7 +13,7 @@ const Home = () => {
   const [fifthSubjects, setFifthSubjects] = useState([]);
   const [sixthSubjects, setSixthSubjects] = useState([]);
   const [selectedSemester, setSelectedSemester] = useState("sixth");
-  const { semestersData, studentsData } = data();
+  const { semestersData, studentsData, subjectData, getSemesterData } = data();
   const [showPopup, setShowPopup] = useState(false);
   const labNumberRef = useRef(null);
   const [isValidate, setIsValidate] = useState(true);
@@ -201,6 +201,8 @@ const Home = () => {
           handleFormData={handleFormData}
           isValidate={isValidate}
           studentsData={studentsData}
+          getSemesterData={getSemesterData}
+          subjectData={subjectData}
           hideLabNumberInput={hideLabNumberInput}
           showPopup={showPopup}
         />

@@ -118,6 +118,11 @@ const data = () => {
         gender: "female",
       },
       {
+        id: "020BIM028",
+        name: "Sujjal Khadka",
+        gender: "male",
+      },
+      {
         id: "020BIM024",
         name: "Utsav Satyal",
         gender: "male",
@@ -134,24 +139,13 @@ const data = () => {
       },
     ],
   };
-  const semesterData = {
+  const subjectData = {
     status: 200,
-    detailss: [
-      {
-        id: "020BIM001",
-        name: "Aayush Shrestha",
-        gender: "male",
-      },
-
-    ],
-  };
-  const semestersData = {
-    status: 200,
-    semesters: {
+    subjects: {
       first: [
         {
           code: "dl",
-          fullName: "Digital Logic",
+          subTitle: "Digital Logic",
           teacher: "Mr. Manish Rathi",
         },
         {
@@ -175,24 +169,34 @@ const data = () => {
           teacher: "Mr. Ganesh Yogi",
         },
       ],
-      fifth: [
+      second: [
         {
-          code: "aiw",
-          fullName: "Advance Internetworking",
-          teacher: "Mr. Sanjay Kumar Yadav",
+          code: "mp",
+          fullName: "Microprocessor & Architecture",
+          teacher: "Manish Rathi",
         },
         {
-          code: "java",
-          fullName: "Java Programming-II",
-          teacher: "Mr. Ramesh Shahi",
+          code: "mathii",
+          fullName: "Mathematics-II",
+          teacher: "Rajan Poudel",
         },
         {
-          code: "cg",
-          fullName: "Computer Graphics",
-          teacher: "Mr. Ganesh Yogi",
+          code: "c",
+          fullName: "C Programming",
+          teacher: "Chandra Prasad",
+        },
+        {
+          code: "ac",
+          fullName: "Account",
+          teacher: "Jiban Ghimire",
+        },
+        {
+          code: "eng-ii",
+          fullName: "English-II",
+          teacher: "Chandra",
         },
       ],
-      sixth: [
+      third: [
         {
           code: "cyber",
           fullName: "Cyber Security",
@@ -237,7 +241,7 @@ const data = () => {
     ]
   };
 
-  return { studentsData, semestersData, getSemesterData };
+  return { studentsData, subjectData, getSemesterData };
 };
 
 export default data;

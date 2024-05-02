@@ -1,6 +1,7 @@
 import SubjectRadio from "./SubjectRadio";
 import CustomsDropdown from "./StudentDropdown";
 import SemesterDropdown from "./SemesterDropdown";
+import SubjectDropdown from "./SubjectDropdown";
 
 
 const FrontPageForm = ({
@@ -13,6 +14,7 @@ const FrontPageForm = ({
   isValidate,
   studentsData,
   getSemesterData,
+  subjectData,
   showPopup
 }) => {
   return (
@@ -71,14 +73,18 @@ const FrontPageForm = ({
       </div>
       <div className="form-group flex h-12 items-center w-full pt-2 px-2">
         <label className="w-1/5 label">Semester:</label>
-        {/* <SemesterDropdown options={} /> */}
+        <SemesterDropdown options={getSemesterData.sem} />
       </div>
 
       <div className="flex h-12 items-center w-full pt-2 px-2">
         <label className="w-1/5 label" htmlFor="subject">
           Subject:
         </label>
-        <SubjectRadio subjectLists={subjectLists} showLabNumberInput={showLabNumberInput} />
+        
+        {/* < SubjectDropdown subjectData={subjectData.subjects} /> */}
+        {/* <SemesterDropdown options={getSemesterData.sem} /> 
+        <SemesterDropdown options={getSemesterData.sem} />  */}
+        {/* <SubjectRadio subjectLists={subjectLists} showLabNumberInput={showLabNumberInput} /> */}
       </div>
       <div className="flex justify-end items-center pr-2">
         <button

@@ -11,7 +11,7 @@ const GenerateDocument = (data) => {
 
     loadFile(
       data.fullSubjectName === "Computer Graphics"
-        ? "/frontpage.docx"
+        ? "/template2.docx"
         : "/template2.docx",
       function (error, content) {
         if (error) {
